@@ -1,5 +1,6 @@
 connection: "dummy_db"
 
+
 include: "*.view.lkml"         # include all views in this project
 include: "*.dashboard.lookml"  # include all dashboards in this project
 
@@ -23,6 +24,7 @@ explore: shots {}
 view: shots {
   derived_table: {
     sql_trigger_value: 1 ;;
+    indexes: ["x"]
     sql:select
     -14116 as x,
     -8032 as y,
