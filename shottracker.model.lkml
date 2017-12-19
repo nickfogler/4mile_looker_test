@@ -4049,4 +4049,12 @@ view: shots {
     sql: ${TABLE}.type ;;
   }
 
+  measure: count {
+    type: count
+  }
+  measure: avg_z {
+    type: average
+    sql: ${TABLE}.z ;;
+  }
+
 }
